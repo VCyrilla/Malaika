@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAF9F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- App Logo -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@android:color/white" />
+
+        <!-- Signup Link -->
+        <TextView
+            android:id="@+id/signupTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No account? Signup"
+            android:textColor="@color/primaryColor"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+</ScrollView>
